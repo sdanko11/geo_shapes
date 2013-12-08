@@ -1,6 +1,8 @@
 require_relative 'square'
 require_relative 'triangle'
 require_relative 'rectangle'
+require_relative 'circle'
+require_relative 'trapazoid'
 require 'rspec'
 
 describe Square do 
@@ -55,6 +57,33 @@ describe Rectangle do
     expect(rectangle.area).to eql(50)
   end
 
+end
+
+describe Circle do
+
+  let(:circle) { Circle.new(5) }
+
+  it "should calculate the area of a circle" do
+    expect(circle.area).to eql(78.54)
+  end
+
+  it "should calculate the perimeter of a circle" do
+    expect(circle.perimeter).to eql(31.42)
+  end
+end
+
+describe Trapazoid do
+
+  let(:trapazoid) { Trapazoid.new(10,20,40) }
+
+  it "should calculate the area of the trapazoid" do
+    expect(trapazoid.area).to eql(8000)
+  end
+
+  it "should calculate the perimeter of the trapazoid" do
+    expect(trapazoid.perimeter).to eql(600)
+  end
+  
 end
 
 
