@@ -1,5 +1,6 @@
 require_relative 'square'
 require_relative 'triangle'
+require_relative 'rectangle'
 require 'rspec'
 
 describe Square do 
@@ -35,4 +36,32 @@ describe Triangle do
   it "calculate the area of a triangel" do
     expect(Triangle.new(5).area).to eql(10)
   end
+
+  it "should calculate area of the triangle" do
+    expect(Triangle.new(5, 3, 8, 15).perimeter).to eql(28)
+  end
+
 end
+
+describe Rectangle do
+
+  let(:rectangle) { Rectangle.new(5,10)}
+
+  it "should calculate the perimeter of the rectangle" do
+    expect(rectangle.perimeter).to eql(30)
+  end
+
+  it "should calculate the area of the triangle" do
+    expect(rectangle.area).to eql(50)
+  end
+
+end
+
+
+
+
+
+
+
+
+

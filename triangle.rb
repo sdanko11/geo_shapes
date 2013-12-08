@@ -16,5 +16,4 @@ class Triangle
     @base * @height / 2
   end
 
-
 end
