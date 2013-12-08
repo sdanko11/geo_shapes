@@ -1,5 +1,3 @@
-require 'pry'
-
 class Square
 
   def initialize(width)
@@ -13,5 +11,5 @@ class Square
   def perimeter
     @width * 4
   end
-  
+
 end
