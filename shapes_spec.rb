@@ -85,12 +85,3 @@ describe Trapazoid do
   end
   
 end
-
-
-
-
-
-
-
-
-
